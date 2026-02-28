@@ -1,5 +1,5 @@
-# Java Script Exercises 
-## This is a simple *Java program* that demonstrates basic object-oriented concepts such as **classes**, **objects**, and **methods**.
+# Java Exercises 
+## This is a simple *Java program* that demonstrates some basic object-oriented concepts such as **classes**, **objects**, and **methods**.
 
 ## Features
 
