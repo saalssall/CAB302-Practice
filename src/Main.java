@@ -188,17 +188,89 @@ public class Main {
 //            System.out.println(i);
 //        } while (i < 5);
 
-        int dice = 1;
+//        int dice = 1;
+//
+//        while (dice <= 6) {
+//            if (dice < 6){
+//                System.out.println("No Yatzy");
+//            }
+//            else if (dice == 6){
+//                System.out.println("Yatzy");
+//            }
+//            dice += 1;
+//        }
 
-        while (dice <= 6) {
-            if (dice < 6){
-                System.out.println("No Yatzy");
-            }
-            else if (dice == 6){
-                System.out.println("Yatzy");
-            }
-            dice += 1;
+        ArrayList <String> cars1 = new ArrayList<String>();
+
+        cars1.add("Toyota Corolla 2013");
+        cars1.add("Mercedez Benz 2020");
+        cars1.add("Nissan Corolla 2009");
+        cars1.add("Mazda two 2016");
+        cars1.add(0, "Toyota RAV 4");
+
+        //Equavalent to the below lines
+
+//        for (String car : cars1){
+//            System.out.println(car);
+//        }
+//        System.out.println("-----------------------");
+        //Creating an iterator
+//        Iterator <String> it = cars1.iterator();
+//        //Iterating through the array
+//
+//        while (it.hasNext()){
+//            String car = it.next();
+//            if (car.equals("Toyota Corolla 2013")){
+//                System.out.println("Found the car!");
+//            }
+//            if  (car.equals("Mercedez Benz 2020")){
+//                it.remove();
+//                System.out.println("Removed Mercedez Benz 2020.");
+//            }
+//        }
+        //Modifying elements of the array
+//        cars1.set(3, "Mitsubishi Outlander 2022");
+//        System.out.println(cars1.get(0));
+//        System.out.println(cars1);
+//        System.out.println(cars1.get(3));
+//        cars1.remove(2);
+//        System.out.println(cars1);
+//        System.out.println(cars1.size());
+//        cars1.clear();
+
+        ArrayList <String> cars2 = new <String> ArrayList();
+        cars2.add("Toyota Corolla 2013");
+        cars2.add("Mercedez Benz 2025");
+        cars2.add("Toyota Prado 2009");
+        cars2.add("Nissan Rav4 2021");
+
+        for (int i = 0; i <cars2.size(); i++){
+            System.out.println(cars2.get(i));
         }
+
+        System.out.println("---------------------");
+        for (String car: cars2)
+        {
+            System.out.println(car);
+        }
+        System.out.println("---------------------");
+        Collections.sort(cars2);
+        for (String car: cars2){
+            System.out.println(car);
+        }
+       String result = (cars2.equals("Toyota Corolla 2013")) ?
+               "Found it!" :
+               "Not found it!";
+        System.out.println(result);
+
+
+
+
+
+
+
+
+
 
 
 
