@@ -1,10 +1,14 @@
-import java.util.ArrayList;
-import java.util.Scanner;
+
 import java.util.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+
+    // Defining a function for the long printing
+    public static void print(Object value) {
+        System.out.println(value);
+    }
 
     public static void main(String[] args) {
         String name = "John";
@@ -54,23 +58,18 @@ public class Main {
         cars.add("Mazda two 2016");
 
 //        System.out.println(cars);
-
         // With var
         //var cars = new ArrayList<String>();
-
 //        Scanner myObj = new Scanner(System.in);
 //        System.out.println("Enter username");
-
 //        String userName = myObj.nextLine();
 //        int age = myObj.nextInt();
 //        System.out.println("Username is: " + userName);
 //        System.out.println("Username age is: " + age);
-
         //Practicing the dog and animal objects
 //        Dog myDog = new Dog();
 //        myDog.animalSound();
 //        myDog.printType();
-
         //Type casting (narrowing casting)
 //        double myDouble = 9.78d;
 //        int myInt = (int) myDouble;
@@ -81,15 +80,12 @@ public class Main {
 //        int userScore = 423;
 //        double Percentage = (double) userScore / maxScore * 100.0d;
 //        System.out.println("User percentage is " + Percentage);
-
 //        maxScore++;
 //        System.out.println(maxScore);
 //        ++maxScore;
 //        System.out.println(maxScore);
-
 //        int score = maxScore / userScore;
 //        System.out.println(score);
-
 //        String text = " This is a long string but i think it is not that long.    ";
 //        String text1 = "This is the second piece of text";
 //        System.out.println(text.length());
@@ -98,7 +94,6 @@ public class Main {
 //        System.out.println(text.charAt(20));
 //        System.out.println(text);
 //        System.out.println(text.trim());
-
 //        System.out.println(text.concat(text1));
 //
 //        String txt1 = "Hello World!";
@@ -108,8 +103,7 @@ public class Main {
 //        System.out.println(txt1.concat(txt2));
 //       String result =  txt1.concat(txt2);
 //       System.out.println(result);
-
-       int time = 20;
+        int time = 20;
 //       if (time < 18){
 //           System.out.println("Good day");
 //       } else {
@@ -121,7 +115,6 @@ public class Main {
 //        System.out.println((time > 18) ? "Good day." : "Good morning.");
 //        String message = (time < 18) ? "Good morning" : (time > 18) ? "Good afternoon" : "Good evening";
 //        System.out.println(message);
-
         boolean isLoggedIn = true;
         boolean isAdmin = false;
         int securityLevel = 3;
@@ -132,7 +125,6 @@ public class Main {
 //        else if ((securityLevel <= 1) && isAdmin) {}
 //            System.out.println("Access granted.");
 //        }
-
 //        if (isLoggedIn && (isAdmin || securityLevel == 2)) {
 //            System.out.println("Access granted.");
 //        }
@@ -140,9 +132,7 @@ public class Main {
 //
 //                System.out.println("Access denied.");
 //        }
-
-       // int myNum = 5;
-
+        // int myNum = 5;
 //        System.out.print(myNum);
 //
 //        if (myNum % 2 == 0){ //Is the remainder 0 after division?
@@ -151,7 +141,6 @@ public class Main {
 //        else {
 //            System.out.print(myNum + " is odd.");
 //        }
-
 //        int countDown = 5;
 //
 //        while (countDown > 0) {
@@ -165,14 +154,12 @@ public class Main {
 //            System.out.println("This will never be printed");
 //            i++;
 //        }
-
 //        int i = 0;
 //        do {
 //            System.out.println(i);
 //            i++;
 //        }
 //        while (i < 4);
-
 //
 //        String name1 = "";
 //
@@ -181,13 +168,11 @@ public class Main {
 //            System.out.println("Enter your name: ");
 //            name1 = input.nextLine();
 //        } while (name1 == null);
-
 //        int i = 10;
 //
 //        do {
 //            System.out.println(i);
 //        } while (i < 5);
-
 //        int dice = 1;
 //
 //        while (dice <= 6) {
@@ -199,8 +184,7 @@ public class Main {
 //            }
 //            dice += 1;
 //        }
-
-        ArrayList <String> cars1 = new ArrayList<String>();
+        ArrayList<String> cars1 = new ArrayList<String>();
 
         cars1.add("Toyota Corolla 2013");
         cars1.add("Mercedez Benz 2020");
@@ -209,7 +193,6 @@ public class Main {
         cars1.add(0, "Toyota RAV 4");
 
         //Equavalent to the below lines
-
 //        for (String car : cars1){
 //            System.out.println(car);
 //        }
@@ -237,33 +220,61 @@ public class Main {
 //        System.out.println(cars1);
 //        System.out.println(cars1.size());
 //        cars1.clear();
+        // ArrayList <String> cars2 = new <String> ArrayList();
+        // cars2.add("Toyota Corolla 2013");
+        // cars2.add("Mercedez Benz 2025");
+        // cars2.add("Toyota Prado 2009");
+        // cars2.add("Nissan Rav4 2021");
+        // for (int i = 0; i <cars2.size(); i++){
+        //     System.out.println(cars2.get(i));
+        // }
+        // System.out.println("---------------------");
+        // for (String car: cars2)
+        // {
+        //     System.out.println(car);
+        // }
+        // System.out.println("---------------------");
+        // Collections.sort(cars2);
+        // for (String car: cars2){
+        //     System.out.println(car);
+        // }
+        // String result = (cars2.equals("Toyota Corolla 2013")) ?
+        //        "Found it!" :
+        //        "Not found it!";
+        // System.out.println(result);
+        // Accessing attributes of a class using (.) syntax
+        Dog mydog = new Dog();
+        //Getting the name of the dog using getters and setters
+        mydog.setName("Alice");
+        System.out.println(mydog.getName());
+        // Modifying an attribute of a class
+        mydog.gender = "male";
+        print(mydog.gender);
 
-        ArrayList <String> cars2 = new <String> ArrayList();
-        cars2.add("Toyota Corolla 2013");
-        cars2.add("Mercedez Benz 2025");
-        cars2.add("Toyota Prado 2009");
-        cars2.add("Nissan Rav4 2021");
+        //Trying to modify the variable declared as final
+        //mydog.age = 20;
+        print(mydog.age);
 
-        for (int i = 0; i <cars2.size(); i++){
-            System.out.println(cars2.get(i));
-        }
-
-        System.out.println("---------------------");
-        for (String car: cars2)
-        {
-            System.out.println(car);
-        }
-        System.out.println("---------------------");
-        Collections.sort(cars2);
-        for (String car: cars2){
-            System.out.println(car);
-        }
-       String result = (cars2.equals("Toyota Corolla 2013")) ?
-               "Found it!" :
-               "Not found it!";
-        System.out.println(result);
+        //Calling the default constructor
+        Car myCar = new Car();
+        myCar.setBrand(2024);
+        print(myCar.getYear());
+        //Calling the constructor with one parameters 
+        Car myCar1 = new Car ("BMW");
+        print(myCar1);
+        //Calling the constructor with two parameters 
+        Car myCar2 = new Car (2021, "glc");
+        print(myCar2);
+        //Calling the constructor with three parameters 
+        Car myCar3 = new Car ("Toyota", "Rav4", "red");
+        print(myCar3);
+        //Calling the constructor with four parameters 
+        Car myCar4 = new Car ("Toyota", "Corolla", "red", 2022);
+        print(myCar4);
 
 
+
+        
 
 
 
@@ -273,15 +284,6 @@ public class Main {
 
 
 
-
-   }
-
+    }
 
 }
-
-
-
-
-
-
-
